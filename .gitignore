@@ -1,6 +1,11 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+# Build and deployment folders
 bin
 obj
+publish
 
 # mstest test results
 TestResults
+
+# User-specific files
+*.suo
+*.userprefs
