@@ -1,0 +1,4 @@
+QuoteServ
+=========
+
+IRC quote bot
