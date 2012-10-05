@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC44AECC-EDAC-45D7-8DFA-C6C3AE190835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Meebey.SmartIrc4net</RootNamespace>
+    <AssemblyName>Meebey.SmartIrc4net</AssemblyName>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Keys\Meebey.SmartIrc4net.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consts.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="IrcClient\Channel.cs" />
+    <Compile Include="IrcClient\ChannelUser.cs" />
+    <Compile Include="IrcClient\Delegates.cs" />
+    <Compile Include="IrcClient\EventArgs.cs" />
+    <Compile Include="IrcClient\IrcClient.cs" />
+    <Compile Include="IrcClient\IrcMessageData.cs" />
+    <Compile Include="IrcClient\IrcUser.cs" />
+    <Compile Include="IrcClient\NonRfcChannel.cs" />
+    <Compile Include="IrcClient\NonRfcChannelUser.cs" />
+    <Compile Include="IrcCommands\IrcCommands.cs" />
+    <Compile Include="IrcCommands\Rfc2812.cs" />
+    <Compile Include="IrcConnection\Delegates.cs" />
+    <Compile Include="IrcConnection\EventArgs.cs" />
+    <Compile Include="IrcConnection\IrcConnection.cs" />
+    <Compile Include="IrcConnection\IrcProperties.cs" />
+    <Compile Include="IrcConnection\IrcTcpClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="IrcClient\" />
+    <Folder Include="IrcCommands\" />
+    <Folder Include="IrcConnection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
+  </ItemGroup>
+</Project>
