@@ -31,7 +31,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     /// This layer is an event driven high-level API with all features you could need for IRC programming.

@@ -1,6 +1,6 @@
 /*
- * $Id: EventArgs.cs 198 2005-06-08 16:50:11Z meebey $
- * $URL: svn://svn.qnetp.net/smartirc/SmartIrc4net/tags/0.4.0/src/EventArgs.cs $
+ * $Id: NonRfcChannel.cs 198 2005-06-08 16:50:11Z meebey $
+ * $URL: svn://svn.qnetp.net/smartirc/SmartIrc4net/tags/0.4.0/src/IrcClient/NonRfcChannel.cs $
  * $Rev: 198 $
  * $Author: meebey $
  * $Date: 2005-06-08 18:50:11 +0200 (Wed, 08 Jun 2005) $
@@ -26,31 +26,52 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-using System;
+using System.Collections;
 using System.Collections.Specialized;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
-    ///
+    /// 
     /// </summary>
     /// <threadsafety static="true" instance="true" />
-    public class IrcEventArgs : EventArgs
+    public class NonRfcChannel : Channel
     {
-        private readonly IrcMessageData _Data;
+        private Hashtable _Halfops = Hashtable.Synchronized(new Hashtable(new CaseInsensitiveHashCodeProvider(), new CaseInsensitiveComparer()));
         
         /// <summary>
         /// 
         /// </summary>
-        public IrcMessageData Data {
+        /// <param name="name"> </param>
+        internal NonRfcChannel(string name) : base(name)
+        {
+        }
+
+#if LOG4NET
+        ~NonRfcChannel()
+        {
+            Logger.ChannelSyncing.Debug("NonRfcChannel ("+Name+") destroyed");
+        }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <value> </value>
+        public Hashtable Halfops {
             get {
-                return _Data;
+                return (Hashtable)_Halfops.Clone();
             }
         }
-         
-        internal IrcEventArgs(IrcMessageData data)
-        {
-            _Data = data;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <value> </value>
+        internal Hashtable UnsafeHalfops {
+            get {
+                return _Halfops;
+            }
         }
     }
 }

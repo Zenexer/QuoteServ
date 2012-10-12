@@ -26,7 +26,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     public delegate void IrcEventHandler(object sender, IrcEventArgs e);
     public delegate void CtcpEventHandler(object sender, CtcpEventArgs e);

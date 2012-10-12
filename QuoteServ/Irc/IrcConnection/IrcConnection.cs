@@ -34,7 +34,7 @@ using System.Threading;
 using System.Reflection;
 using System.Net.Sockets;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     /// 

@@ -29,7 +29,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <threadsafety static="true" instance="true" />
     [Serializable()]

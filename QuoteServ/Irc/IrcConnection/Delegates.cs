@@ -1,16 +1,16 @@
 /*
- * $Id: IrcConnection.cs 208 2006-01-28 17:11:59Z meebey $
- * $URL: svn+ssh://svn.qnetp.net/svn/smartirc/SmartIrc4net/trunk/src/IrcConnection/IrcConnection.cs $
- * $Rev: 208 $
+ * $Id: Delegates.cs 201 2005-06-09 17:06:22Z meebey $
+ * $URL: svn://svn.qnetp.net/smartirc/SmartIrc4net/tags/0.4.0/src/IrcConnection/Delegates.cs $
+ * $Rev: 201 $
  * $Author: meebey $
- * $Date: 2006-01-28 18:11:59 +0100 (Sat, 28 Jan 2006) $
+ * $Date: 2005-06-09 19:06:22 +0200 (Thu, 09 Jun 2005) $
  *
  * SmartIrc4net - the IRC library for .NET/C# <http://smartirc4net.sf.net>
  *
  * Copyright (c) 2003-2005 Mirco Bauer <meebey@meebey.net> <http://www.meebey.net>
- * 
+ *
  * Full LGPL License: <http://www.gnu.org/licenses/lgpl.txt>
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -26,23 +26,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-using System;
-using System.IO;
-using System.Text;
-using System.Collections;
-using System.Threading;
-using System.Reflection;
-using System.Net.Sockets;
-
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <threadsafety static="true" instance="true" />
-    /*
-    public class IrcProperties
-    {
-    }
-    */
+    public delegate void ReadLineEventHandler(object sender, ReadLineEventArgs e);
+    public delegate void WriteLineEventHandler(object sender, WriteLineEventArgs e);
+    public delegate void AutoConnectErrorEventHandler(object sender, AutoConnectErrorEventArgs e);
 }

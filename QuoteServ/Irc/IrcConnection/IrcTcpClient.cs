@@ -28,7 +28,7 @@
 
 using System.Net.Sockets;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     ///

@@ -7,11 +7,11 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DC44AECC-EDAC-45D7-8DFA-C6C3AE190835}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Meebey.SmartIrc4net</RootNamespace>
-    <AssemblyName>Meebey.SmartIrc4net</AssemblyName>
+    <RootNamespace>Irc</RootNamespace>
+    <AssemblyName>Irc</AssemblyName>
     <ReleaseVersion>1.0.0</ReleaseVersion>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Keys\Meebey.SmartIrc4net.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Keys\Irc.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

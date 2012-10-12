@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuoteServ", "QuoteServ\QuoteServ.csproj", "{48AB40EA-C05D-4924-9588-688BB987EE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meebey.SmartIrc4net", "Meebey.SmartIrc4net\Meebey.SmartIrc4net.csproj", "{DC44AECC-EDAC-45D7-8DFA-C6C3AE190835}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irc", "Irc\Irc.csproj", "{DC44AECC-EDAC-45D7-8DFA-C6C3AE190835}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keys", "Keys", "{8AD4988B-BD1A-47DA-8876-2E6E7E5CAB87}"
 	ProjectSection(SolutionItems) = preProject
-		Keys\Meebey.SmartIrc4net.snk = Keys\Meebey.SmartIrc4net.snk
 		Keys\QuoteServ.snk = Keys\QuoteServ.snk
+		Keys\Irc.snk = Keys\Irc.snk
 	EndProjectSection
 EndProject
 Global
@@ -51,11 +51,6 @@ Global
 		$3.WhileBraceForcement = AddBraces
 		$3.UsingBraceForcement = AddBraces
 		$3.FixedBraceForcement = AddBraces
-		$3.ElseNewLinePlacement = NewLine
-		$3.ElseIfNewLinePlacement = SameLine
-		$3.CatchNewLinePlacement = NewLine
-		$3.FinallyNewLinePlacement = NewLine
-		$3.WhileNewLinePlacement = NewLine
 		$3.BeforeMethodDeclarationParentheses = False
 		$3.BeforeMethodCallParentheses = False
 		$3.BeforeConstructorDeclarationParentheses = False
@@ -228,6 +223,14 @@ Global
 		$34.MessageStyle = $35
 		$35.LineAlign = 0
 		$34.inheritsSet = Mono
+		$0.TextStylePolicy = $36
+		$36.FileWidth = 100
+		$36.TabWidth = 4
+		$36.RemoveTrailingWhitespace = True
+		$36.EolMarker = Unix
+		$36.inheritsSet = Mono
+		$36.inheritsScope = text/plain
+		$36.scope = text/plain
 		version = 1.0.0
 	EndGlobalSection
 EndGlobal

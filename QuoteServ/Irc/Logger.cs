@@ -29,7 +29,7 @@
 using System.IO;
 using System.Collections;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
 #if LOG4NET
     /// <summary>

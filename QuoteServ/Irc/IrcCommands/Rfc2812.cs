@@ -30,7 +30,7 @@ using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     ///

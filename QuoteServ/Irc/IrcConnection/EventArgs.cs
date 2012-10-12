@@ -29,7 +29,7 @@
 using System;
 using System.Collections.Specialized;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     ///

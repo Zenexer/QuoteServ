@@ -52,7 +52,7 @@ using System.Runtime.InteropServices;
 
 #if DELAY_SIGN
 [assembly: AssemblyDelaySign(true)]
-[assembly: AssemblyKeyFile("../Keys/Meebey.SmartIrc4net.snk")]
+[assembly: AssemblyKeyFile("../Keys/Irc.snk")]
 #else
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]

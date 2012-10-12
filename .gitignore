@@ -3,6 +3,9 @@ bin
 obj
 publish
 
+# Cache files
+*.pidb
+
 # mstest test results
 TestResults
 

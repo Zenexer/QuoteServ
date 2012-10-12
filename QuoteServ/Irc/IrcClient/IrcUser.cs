@@ -28,7 +28,7 @@
 
 using System.Collections.Specialized;
 
-namespace Meebey.SmartIrc4net
+namespace Irc
 {
     /// <summary>
     /// This class manages the user information.
